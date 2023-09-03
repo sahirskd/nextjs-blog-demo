@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import SearchResults from './SearchResults'
+import { HeaderNavigation } from './HeaderNavigation'
 
 export default function Search() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -23,6 +24,7 @@ export default function Search() {
   return (
     <div className='relative bg-gray-600 p-4'>
       <div className='container mx-auto flex items-center justify-center md:justify-end'>
+        {/* <HeaderNavigation /> */}
         <div className='relative text-gray-600 w-72'>
           <form>
             <input
